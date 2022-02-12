@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: #d5e1ef;
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+.bd-container {
+  max-width: 1340px;
+  margin: 0 1rem;
+}
+
+body {
+  background-color: var(--Grayish-blue);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px 15px 30px 30px;
+  max-width: 320px;
+}
+
+.card-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-content .card-info h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+  color: var(--Dark-blue);
+  margin-bottom: 15px;
+}
+
+.card-content .card-info p {
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto 15px auto;
+  font-weight: 400;
+  color: #d5d7da;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media screen and (min-width: 1340px) {
+  .bd-container {
+    margin: 0 auto;
+  }
+}
+
+/* @media screen and (max-width: 650px) {
+  .card-content .card-info p {
+    color: #d5d7da;
+  }
+} */
